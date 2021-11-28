@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+/* DEFINIÇÕES GLOBAIS */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS USADAS */
+:root {
+    --One: #AEB7BF;
+    --Two: #7B848C;
+    --Thr: #4A5259;
+    --Fou: #171F26;
+    --Fiv: #070A0D;
+
+    --Black: #000000;
+    --White: #FFFFFF;
+}
+
+/* DEFINIÇÕES DO BODY */
+body {
+    color: var(--White);
+    background-color: var(--Fiv);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* DEFINIÇÕES DO HEADER */
+header .header-title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    text-align: center;
+    font-size: 2.5em;
+
+    margin-top: 25px;
+}
+
+/* DEFINIÇÕES DO MAIN */
+main .container-menu {
+    width: 425px;
+    
+    display: block;
+
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding-top: 10px;
+
+    border-radius: 5px;
+    background-color: var(--Fou);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.500);
+}
+
+.container-menu #resultado-conta {
+    display: block;
+
+    width: 390px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 10px;
+
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: right;
+    font-size: 2em;
+
+    transition: .3s ease all;
+
+    background-color: var(--One);
+
+    border-radius: 5px;
+}
+
+.container-menu .number-area {
+    display: inline-block;
+    width: 305px;
+}
+
+.container-menu .buttons-operations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.buttons-operations .button {
+    width: 90px;
+
+    cursor: pointer;
+    font-size: 1em;
+
+    border: 1px solid rgba(255, 255, 255, 0.200);
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-right: 3px;
+    margin-left: 3px;
+
+    color: var(--White);
+    background-color: var(--Thr);
+}
+
+.buttons-operations .button:hover {
+    color: var(--Thr);
+    background-color: var(--White);
+
+    transition: .3s ease all;
+}
+
+.buttons-operations .button:not(:hover) {
+    color: var(--White);
+    background-color: var(--Thr);
+
+    transition: .3s ease all;
+}
+
+.container-menu .buttons-numbers {
+    display: inline-flex;
+    align-items: left;
+    flex-direction: row;
+    justify-content: left;
+
+    padding-top: 5px;
+
+    margin-left: 20px;
+}
+
+.buttons-numbers .button-number {
+    height: 40px;
+    width: 90px;
+
+    font-size: 1em;
+
+    cursor: pointer;
+
+    border: 1px solid rgba(255, 255, 255, 0.200);
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-right: 3px;
+    margin-left: 3px;
+
+    color: var(--White);
+    background-color: var(--Two);
+}
+
+.buttons-numbers .button-number:hover {
+    color: var(--Two);
+    background-color: var(--White);
+
+    transition: .3s ease all;
+}
+
+.buttons-numbers .button-number:not(:hover) {
+    color: var(--White);
+    background-color: var(--Two);
+
+    transition: .3s ease all;
+}
+
+.button-equal {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row-reverse;
+}
+
+.button-number-equal {
+    height: 85px;
+    width: 90px;
+
+    cursor: pointer;
+
+    font-size: 1em;
+
+    border: 1px solid rgba(255, 255, 255, 0.200);
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: -295px;
+    margin-right: 24px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+    color: var(--White);
+    background-color: var(--Two);
+}
+
+.button-number-equal:hover {
+    color: var(--One);
+    background-color: var(--White);
+
+    transition: .3s ease all;
+}
+
+.button-number-equal:not(:hover) {
+    color: var(--White);
+    background-color: var(--One);
+
+    transition: .3s ease all;
+}
+
+#button-clearCa {
+    margin-bottom: 20px;
+}
